@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Baper Bank</title>
+
+    <!-- Tailwind CSS Linkup  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Linkup  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="bank-dashborad py-10">
+      <div class="container m-auto">
+        <h3
+          class="
+            font-bold
+            text-black-400
+            sm:text-5xl
+            text-3xl
+            uppercase
+            py-10
+            text-center
+          "
+        >
+          <a href="https://hridayshaha.com/" target="_blank"
+            >Welcome to <span class="text-green-400">Baper Bank</span></a
+          >
+        </h3>
+
+        <!-- Money Dashboard -->
+        <div class="money-dashboard">
+          <div class="flex flex-col sm:flex-row">
+            <!-- Deposit Section  -->
+            <div
+              class="
+                bg-indigo-500
+                text-white
+                rounded-lg
+                flex-1
+                mx-5
+                my-2
+                p-16
+                sm:p-20
+              "
+            >
+              <p class="text-2xl uppercase pb-3">Deposit</p>
+              <h2 class="text-4xl font-bold">
+                $<span id="deposit-amount">000</span>
+              </h2>
+            </div>
+
+            <!-- Withdraw Section  -->
+            <div
+              class="
+                bg-green-500
+                text-white
+                rounded-lg
+                flex-1
+                mx-5
+                my-2
+                p-16
+                sm:p-20
+              "
+            >
+              <p class="text-2xl uppercase pb-3">Withdraw</p>
+              <h2 class="text-4xl font-bold">
+                $<span id="withdraw-amount">000</span>
+              </h2>
+            </div>
+
+            <!-- Total Amount Section  -->
+            <div
+              class="
+                bg-yellow-500
+                text-white
+                rounded-lg
+                flex-1
+                mx-5
+                my-2
+                p-16
+                sm:p-20
+              "
+            >
+              <p class="text-2xl uppercase pb-3">Total Amount</p>
+              <h2 class="text-4xl font-bold">
+                $<span id="total-balance">1200</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Money Input Dashboard -->
+        <div class="money-input py-5">
+          <div class="flex flex-col sm:flex-row">
+            <!-- Deposit Money Input -->
+            <div class="bg-yellow-200 rounded-lg flex-1 mx-5 my-2 p-10 sm:p-20">
+              <h2 class="text-2xl pb-5 font-bold text-center">
+                Deposit Amount
+              </h2>
+              <input
+                type="text"
+                placeholder=" $ Input Deposit Money"
+                class="
+                  border border-gray-200
+                  p-4
+                  rounded-lg
+                  block
+                  mb-5
+                  w-full
+                  focus:outline-none
+                "
+                id="deposit-input"
+              />
+              <button
+                class="bg-blue-500 px-5 py-3 text-white w-full"
+                type="submit"
+                id="deposit-button"
+              >
+                Deposit
+              </button>
+            </div>
+
+            <!-- Withdraw Money Input -->
+            <div class="bg-green-200 rounded-lg flex-1 mx-5 my-2 p-10 sm:p-20">
+              <h2 class="text-2xl pb-5 font-bold text-center">
+                Withdraw Amount
+              </h2>
+              <input
+                type="text"
+                placeholder=" $ Input Withdraw Money"
+                class="
+                  border border-gray-200
+                  p-4
+                  rounded-lg
+                  block
+                  mb-5
+                  w-full
+                  focus:outline-none
+                "
+                id="withdraw-input"
+              />
+              <button
+                class="bg-blue-500 px-5 py-3 text-white w-full"
+                type="submit"
+                id="withdraw-button"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript Connect  -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
